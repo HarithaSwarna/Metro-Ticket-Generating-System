@@ -8,7 +8,7 @@ The system allows passengers to enter their journey details, select the type of 
 
 The project demonstrates the use of **ServiceNow Service Catalog, Catalog Variables, Client Scripts, UI Policies, Flow Designer, Service Portal, and Service Portal Widgets** to build an automated ticketing solution.
 
-
+---
 
 ## 🎯 Objectives
 
@@ -23,7 +23,9 @@ The project demonstrates the use of **ServiceNow Service Catalog, Catalog Variab
 * Generate a digital QR code for the ticket.
 * Display the generated ticket through the ServiceNow Service Portal.
 * Reduce manual ticket processing and improve the overall user experience.
-  
+
+---
+
 ## ✨ Features
 
 ### 🎫 1. Metro Ticket Booking
@@ -68,11 +70,11 @@ A unique ticket number is generated for every metro ticket request.
 
 Example:
 
- text
+```text
 MT10001
 MT10002
 MT10003
-
+```
 
 ### 📱 7. QR Code
 
@@ -91,7 +93,7 @@ The QR code can contain information such as:
 
 The generated metro ticket is displayed through the ServiceNow Service Portal using a custom widget.
 
-
+---
 
 # 🛠️ Technologies Used
 
@@ -109,11 +111,11 @@ The generated metro ticket is displayed through the ServiceNow Service Portal us
 | JavaScript            | Business and client-side logic        |
 | QR Code API           | QR code generation                    |
 
-
+---
 
 # 🏗️ System Architecture
 
-  text
+```text
                     ┌──────────────────────┐
                     │       Passenger      │
                     └──────────┬───────────┘
@@ -151,6 +153,9 @@ The generated metro ticket is displayed through the ServiceNow Service Portal us
                     │   Digital Metro      │
                     │        Ticket        │
                     └──────────────────────┘
+```
+
+---
 
 # 📋 Service Catalog Item
 
@@ -178,7 +183,7 @@ The main Catalog Item created for the project is:
 
 The complete workflow of the system is:
 
-   text
+```text
 1. Passenger opens Service Portal
              ↓
 2. Selects Metro Ticket Generating System
@@ -204,7 +209,9 @@ The complete workflow of the system is:
 12. QR code is generated
              ↓
 13. Digital metro ticket is displayed
+```
 
+---
 
 # 🔢 Fare Calculation
 
@@ -212,7 +219,7 @@ The system handles fare information according to the selected journey type.
 
 ### Single Journey
 
-   text
+```text
 Journey Type = Single Journey
 
         ↓
@@ -220,13 +227,13 @@ Journey Type = Single Journey
 Single Journey Amount
         ↓
 Displayed
-
+```
 
 The **Amount Including Return** field remains hidden.
 
 ### Return Journey
 
-   text
+```text
 Journey Type = Return Journey
 
         ↓
@@ -236,11 +243,11 @@ Return Fare
 Amount Including Return
         ↓
 Displayed
-
+```
 
 The return fare field is dynamically displayed when the user selects **Return Journey**.
 
-
+---
 
 # 🧩 ServiceNow Components
 
@@ -262,16 +269,17 @@ UI Policies are used to dynamically show or hide fields.
 
 For example:
 
-  text
+```text
 If Type of Journey = Return Journey
         ↓
 Show Amount Including Return
 ```
 
-  text
+```text
 If Type of Journey = Single Journey
         ↓
 Hide Amount Including Return
+```
 
 ## 5. Flow Designer
 
@@ -285,6 +293,7 @@ Service Portal provides the user-facing interface for booking and viewing the me
 
 A custom widget is used to display the digital ticket and QR code.
 
+---
 
 # 📱 QR Code Generation
 
@@ -292,21 +301,22 @@ The system generates a QR code for the metro ticket.
 
 The QR code can contain the ticket information:
 
-text
+```text
 Ticket Number: MT10001
 Starting From: Ameerpet
 Going To: Hitech City
 Journey Type: Return Journey
 Passengers: 2
 Amount: ₹80
-
+```
 
 The passenger can scan the QR code using a smartphone to access the encoded ticket information.
 
+---
 
 # 🎟️ Sample Digital Ticket
 
-     text
+```text
 ╔══════════════════════════════════╗
 ║          🚇 METRO TICKET         ║
 ╠══════════════════════════════════╣
@@ -325,7 +335,9 @@ The passenger can scan the QR code using a smartphone to access the encoded tick
 ║          [ QR CODE ]             ║
 ║                                  ║
 ╚══════════════════════════════════╝
+```
 
+---
 
 # 🧪 Testing
 
@@ -343,6 +355,75 @@ The following test cases can be used to verify the application.
 | Generate QR code      | QR code is displayed                             |
 | Scan QR code          | Encoded ticket information is available          |
 
+---
+
+# 📸 Project Screenshots
+
+Add screenshots of your actual ServiceNow project in the `screenshots` folder.
+
+Recommended screenshots:
+
+```text
+screenshots/
+│
+├── 01-service-catalog.png
+├── 02-ticket-form.png
+├── 03-single-journey.png
+├── 04-return-journey.png
+├── 05-fare-calculation.png
+├── 06-payment-mode.png
+├── 07-generated-ticket.png
+├── 08-qr-code.png
+└── 09-service-portal.png
+```
+
+You can then display them in this README using:
+
+```markdown
+## 📸 Screenshots
+
+### Metro Ticket Form
+
+![Metro Ticket Form](screenshots/02-ticket-form.png)
+
+### Return Journey
+
+![Return Journey](screenshots/04-return-journey.png)
+
+### Generated Ticket
+
+![Generated Ticket](screenshots/07-generated-ticket.png)
+
+### QR Code
+
+![QR Code](screenshots/08-qr-code.png)
+```
+
+---
+
+# 📁 Repository Structure
+
+```text
+Metro-Ticket-Generating-System/
+│
+├── README.md
+│
+├── screenshots/
+│   ├── 01-service-catalog.png
+│   ├── 02-ticket-form.png
+│   ├── 03-single-journey.png
+│   ├── 04-return-journey.png
+│   ├── 05-fare-calculation.png
+│   ├── 06-payment-mode.png
+│   ├── 07-generated-ticket.png
+│   ├── 08-qr-code.png
+│   └── 09-service-portal.png
+│
+└── documentation/
+    └── Metro-Ticket-Documentation.pdf
+```
+
+---
 
 # 🚀 Future Enhancements
 
@@ -382,3 +463,19 @@ This project helped demonstrate practical knowledge of:
 * Dynamic form behavior
 * Workflow automation
 * QR code integration
+
+---
+
+# 👩‍💻 Author
+
+**Haritha Swarna**
+
+**B.Tech – Computer Science and Engineering**
+
+---
+
+# 📌 Project Summary
+
+The **Metro Ticket Generating System** is an automated ServiceNow solution for generating digital metro tickets. It provides a structured ticket-booking process where passengers can enter journey details, select the journey type, specify the number of passengers, view the applicable fare, select a payment mode, and generate a digital ticket with a QR code.
+
+The project demonstrates how ServiceNow can be used to automate a real-world transportation use case by combining **Service Catalog, scripting, UI Policies, Flow Designer, Service Portal, and QR-code functionality**.
