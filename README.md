@@ -355,75 +355,7 @@ The following test cases can be used to verify the application.
 | Generate QR code      | QR code is displayed                             |
 | Scan QR code          | Encoded ticket information is available          |
 
----
 
-# 📸 Project Screenshots
-
-Add screenshots of your actual ServiceNow project in the `screenshots` folder.
-
-Recommended screenshots:
-
-```text
-screenshots/
-│
-├── 01-service-catalog.png
-├── 02-ticket-form.png
-├── 03-single-journey.png
-├── 04-return-journey.png
-├── 05-fare-calculation.png
-├── 06-payment-mode.png
-├── 07-generated-ticket.png
-├── 08-qr-code.png
-└── 09-service-portal.png
-```
-
-You can then display them in this README using:
-
-```markdown
-## 📸 Screenshots
-
-### Metro Ticket Form
-
-![Metro Ticket Form](screenshots/02-ticket-form.png)
-
-### Return Journey
-
-![Return Journey](screenshots/04-return-journey.png)
-
-### Generated Ticket
-
-![Generated Ticket](screenshots/07-generated-ticket.png)
-
-### QR Code
-
-![QR Code](screenshots/08-qr-code.png)
-```
-
----
-
-# 📁 Repository Structure
-
-```text
-Metro-Ticket-Generating-System/
-│
-├── README.md
-│
-├── screenshots/
-│   ├── 01-service-catalog.png
-│   ├── 02-ticket-form.png
-│   ├── 03-single-journey.png
-│   ├── 04-return-journey.png
-│   ├── 05-fare-calculation.png
-│   ├── 06-payment-mode.png
-│   ├── 07-generated-ticket.png
-│   ├── 08-qr-code.png
-│   └── 09-service-portal.png
-│
-└── documentation/
-    └── Metro-Ticket-Documentation.pdf
-```
-
----
 
 # 🚀 Future Enhancements
 
@@ -464,15 +396,6 @@ This project helped demonstrate practical knowledge of:
 * Workflow automation
 * QR code integration
 
----
-
-# 👩‍💻 Author
-
-**Haritha Swarna**
-
-**B.Tech – Computer Science and Engineering**
-
----
 
 # 📌 Project Summary
 
